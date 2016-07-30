@@ -1,0 +1,18 @@
+package com.gyaani.dao;
+
+import java.util.List;
+
+import com.gyaani.domain.Employee;
+
+public interface DataDao {
+	public int insertRow(Employee employee);
+
+	public List<Employee> getList();
+
+	public Employee getRowById(int id);
+
+	public int updateRow(Employee employee);
+
+	public int deleteRow(int id);
+
+}
